@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/3beab63c5d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dashboard</title>
+    <style>
+      body {
+        background: #fff;
+      }
+      p {
+        font-size: 16px;
+        font-family: sans-serif;
+      }
+      h5 {
+        font-family: sans-serif;
+      }
+      sup {
+        font-weight: bold;
+      }
+      .icon {
+        padding-top: 5px;
+        padding-right: 20px;
+      }
+      .dash {
+        margin: 0.8rem;
+      }
+      hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      .fill {
+        height: 10px;
+        width: 100%;
+        border-radius: 20px;
+        margin-top: -12px;
+      }
+
+      .wk,
+      .Mo {
+        padding: 0px 10px 0px 10px;
+        border-radius: 3px;
+      }
+      .cd {
+        text-align: center;
+        width: 100%;
+        margin-top: -50px;
+        margin-left: 15px;
+      }
+      .cards-container {
+        padding: 0px 0px 300px 0px;
+        background: rgb(253, 255, 252);
+        margin-bottom: 8rem;
+        padding-right: 1rem;
+      }
+      .cd > p {
+        font-size: 10px;
+        padding-top: 5px;
+        font-family: sans-serif;
+        font-weight: 600;
+      }
+      @media screen and (min-width: 600px) {
+        .cards-container {
+          padding-left: 80px;
+          padding-right: 80px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="col-md-2 card"
+          style="
+            padding-top: 60px;
+            padding-bottom: 40px;
+            background: rgb(253, 252, 249);
+          "
+        >
+          <div class="d-flex dash">
+            <i class="fas fa-tachometer-alt icon"></i>
+            <p class="text-muted">Dashboard</p>
+          </div>
+          <div class="d-flex justify-content-between dash">
+            <div class="all d-flex">
+              <i class="fas fa-inbox icon ic2"></i>
+              <p class="text-dark">Email API</p>
+            </div>
+            <div class="">
+              <i class="fas fa-angle-down ic3"></i>
+            </div>
+          </div>
+          <p class="text-muted">Dyanmic Template Integration Guide</p>
+          <div class="d-flex justify-content-between dash">
+            <div class="all d-flex">
+              <i class="fas fa-volume-up icon ic2"></i>
+              <p class="text-muted">
+                Marketing<span><sup class="text-success">NEW</sup></span>
+              </p>
+            </div>
+            <div class="">
+              <i class="fas fa-angle-down ic3"></i>
+            </div>
+          </div>
+          <div class="d-flex dash">
+            <i class="fas fa-pencil-ruler icon"></i>
+            <p class="text-muted">Design Library</p>
+          </div>
+          <div class="d-flex justify-content-between dash">
+            <div class="all d-flex">
+              <i class="fas fa-chart-bar icon ic2"></i>
+              <p class="text-muted">Starts</p>
+            </div>
+            <div class="">
+              <i class="fas fa-angle-down ic3"></i>
+            </div>
+          </div>
+          <div class="d-flex dash">
+            <i class="fas fa-envelope-open-text icon"></i>
+            <p class="text-muted">Activity</p>
+          </div>
+          <div class="d-flex justify-content-between dash">
+            <div class="all d-flex">
+              <i class="fas fa-envelope icon ic2"></i>
+              <p class="text-muted">Suppressions</p>
+            </div>
+            <div class="">
+              <i class="fas fa-angle-down ic3"></i>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between dash">
+            <div class="all d-flex">
+              <i class="fas fa-sliders-h icon ic2"></i>
+              <p class="text-muted">Settings</p>
+            </div>
+            <div class="">
+              <i class="fas fa-angle-down ic3"></i>
+            </div>
+          </div>
+          <hr />
+          <div class="d-flex dash">
+            <i class="fas fa-comment-alt icon ic2"></i>
+            <p class="text-muted">
+              Twilio SMS<span><sup class="text-success">NEW</sup></span>
+            </p>
+          </div>
+          <div class="d-flex justify-content-between">
+            <p
+              class="text-muted"
+              style="
+                text-decoration: underline;
+                text-decoration-style: dotted;
+                padding-left: 30px;
+              "
+            >
+              REPUTATION
+            </p>
+            <p class="text-dart" style="font-weight: bold">100%</p>
+          </div>
+          <div class="bg-success fill"></div>
+          <p
+            class="text-muted"
+            style="
+              text-decoration: underline;
+              text-decoration-style: dotted;
+              padding-left: 30px;
+              padding-top: 20px;
+            "
+          >
+            VIEW ACCOUNT USAGE
+          </p>
+        </div>
+        <div class="col-sm-10">
+          <div
+            class="row top shadow p-4 mb-4 bg-white"
+            style="
+              background: radial-gradient(
+                circle,
+                rgba(255, 255, 255, 1) 0%,
+                rgba(212, 229, 239, 1) 0%
+              );
+              padding: 30px 80px 30px 30px;
+              margin: 26px 26px 32px 26px;
+              border-radius: 5px;
+            "
+          >
+            <h5 class="display-7">
+              Ready to unlock the full potential of Twilio SendGrid?
+            </h5>
+            <p class="text-muted">
+              Finish your account setup inorder to select a paid Email API or
+              Marketing Campaign plan
+            </p>
+            <div
+              style="
+                border: 1px solid rgb(11, 89, 179);
+                background: white;
+                color: rgb(11, 89, 179);
+                width: 130px;
+                padding: 10px;
+                text-align: center;
+                margin-left: 10px;
+                border-radius: 3px;
+              "
+            >
+              Let's do it!
+            </div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h5 class="display-7" style="padding-left: 40px">
+              Hello Greg! Here's your recent email activity.
+            </h5>
+            <div
+              class="d-flex switch justify-content-between"
+              style="
+                border: 1px solid rgb(11, 89, 179);
+                background: white;
+                color: rgb(11, 89, 179);
+                width: 130px;
+                padding: 8px;
+                text-align: center;
+                margin-left: 10px;
+                border-radius: 3px;
+              "
+            >
+              <div class="wk bg-primary text-white text-center">wk</div>
+              <div class="Mo text-center text-primary">Mo</div>
+            </div>
+          </div>
+          <div style="margin-top: 7rem">
+            <div class="cards-container card">
+              <div class="d-flex">
+                <div class="card cd">
+                  <p class="text-muted">REQUESTS</p>
+                  <h4
+                    class="display-4 text-success"
+                    style="font-size: 30px; padding-top: 13px"
+                  >
+                    0
+                  </h4>
+                </div>
+                <div class="card cd">
+                  <p class="text-muted">DELIVERED</p>
+                  <h5 class="" style="color: #e5c03e">N/A</h5>
+                  <p class="display-7" style="color: #e5c03e">0</p>
+                </div>
+                <div class="card cd">
+                  <p class="text-muted">OPENED</p>
+                  <h5 class="text-primary">N/A</h5>
+                  <p class="display-7 text-primary">0</p>
+                </div>
+                <div class="card cd">
+                  <p class="text-muted">CLICKED</p>
+                  <h5 class="text-primary">N/A</h5>
+                  <p class="display-7 text-primary">0</p>
+                </div>
+                <div class="card cd">
+                  <p class="text-muted">BOUNCES</p>
+                  <h5 class="" style="color: blueviolet">N/A</h5>
+                  <p class="display-7" style="color: blueviolet">0</p>
+                </div>
+                <div class="card cd">
+                  <p class="text-muted">SPAM REPORTS</p>
+                  <h5 class="text-danger">N/A</h5>
+                  <p class="display-7 text-danger">0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
